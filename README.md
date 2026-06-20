@@ -42,12 +42,11 @@ This project was developed as part of a backend and computer vision learning exe
 ## Project Structure
 
 flask-opencv-image-analyzer/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── venv/
+app.py
+requirements.txt
+README.md
+.gitignore
+ venv/
 
 > Note: The `venv` directory is excluded from version control using `.gitignore`.
 
