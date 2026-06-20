@@ -6,6 +6,7 @@ Flask OpenCV Image Analyzer is a lightweight REST API built using Python, Flask,
 
 This project was developed as part of a backend and computer vision learning exercise focused on API development, image processing, and server-side vision computation.
 
+---
 
 ## Features
 
@@ -18,6 +19,7 @@ This project was developed as part of a backend and computer vision learning exe
 * JSON response output
 * Error handling for invalid or missing image uploads
 
+---
 
 ## Tech Stack
 
@@ -38,17 +40,23 @@ This project was developed as part of a backend and computer vision learning exe
 
 * Postman
 
+---
 
 ## Project Structure
 
-flask-opencv-image-analyzer/ ->
-app.py
-requirements.txt
-README.md
-.gitignore
- venv/
+```text
+flask-opencv-image-analyzer/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── venv/
+```
 
 > Note: The `venv` directory is excluded from version control using `.gitignore`.
+
+---
 
 ## API Endpoint
 
@@ -56,12 +64,15 @@ README.md
 
 **Endpoint**
 
+```http
 POST /api/analyze
+```
 
 **Content Type**
 
+```text
 multipart/form-data
-
+```
 
 **Request Parameter**
 
@@ -69,6 +80,7 @@ multipart/form-data
 | --------- | ---- | --------------- |
 | image     | File | JPEG image file |
 
+---
 
 ## Sample Request
 
@@ -77,7 +89,9 @@ Using Postman:
 1. Select POST method.
 2. Enter the URL:
 
+```text
 http://127.0.0.1:5000/api/analyze
+```
 
 3. Navigate to Body → form-data.
 4. Add a key named `image`.
@@ -85,34 +99,42 @@ http://127.0.0.1:5000/api/analyze
 6. Upload a JPEG image.
 7. Click Send.
 
+---
+
 ## Sample Response
 
+```json
 {
     "status": "processed",
     "brightness": 142.5
 }
+```
 
+---
 
 ## Image Processing Workflow
 
+```text
 Client Upload
-      ->
+      ↓
 Flask API Endpoint
-      ->
+      ↓
 Receive JPEG File
-      ->
+      ↓
 Convert Bytes to NumPy Array
-      ->
+      ↓
 Decode Image using OpenCV
-      ->
+      ↓
 Convert Image to Grayscale
-      ->
+      ↓
 Calculate Average Brightness
-      ->
+      ↓
 Draw Center Bounding Box
-      ->
+      ↓
 Return JSON Response
+```
 
+---
 
 ## Installation and Setup
 
@@ -155,6 +177,7 @@ Server starts at:
 http://127.0.0.1:5000
 ```
 
+---
 
 ## Learning Outcomes
 
@@ -171,6 +194,8 @@ Through this project, the following concepts were explored:
 * Bounding box generation
 * API testing using Postman
 
+---
+
 ## Future Enhancements
 
 * Save processed images to disk
@@ -180,11 +205,14 @@ Through this project, the following concepts were explored:
 * Containerize using Docker
 * Deploy on cloud platforms
 
+---
 
 ## Author
 
-Anwesha Panda
+**Anwesha Panda**
 
-B.Tech Computer Science and Engineering
 
-Backend Development | Computer Vision | Machine Learning
+
+
+
+
