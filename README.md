@@ -88,7 +88,6 @@ http://127.0.0.1:5000/api/analyze
 
 ## Sample Response
 
-json
 {
     "status": "processed",
     "brightness": 142.5
@@ -98,21 +97,21 @@ json
 ## Image Processing Workflow
 
 Client Upload
-      ↓
+      ->
 Flask API Endpoint
-      ↓
+      ->
 Receive JPEG File
-      ↓
+      ->
 Convert Bytes to NumPy Array
-      ↓
+      ->
 Decode Image using OpenCV
-      ↓
+      ->
 Convert Image to Grayscale
-      ↓
+      ->
 Calculate Average Brightness
-      ↓
+      ->
 Draw Center Bounding Box
-      ↓
+      ->
 Return JSON Response
 
 
