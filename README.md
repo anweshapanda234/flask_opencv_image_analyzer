@@ -41,7 +41,7 @@ This project was developed as part of a backend and computer vision learning exe
 
 ## Project Structure
 
-flask-opencv-image-analyzer/
+flask-opencv-image-analyzer/-
 app.py
 requirements.txt
 README.md
